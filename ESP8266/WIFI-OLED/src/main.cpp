@@ -12,13 +12,14 @@
 #include <Adafruit_SSD1306.h>
 //烧写不进去,刷一些固件
 
-const char *ssid = "72B319";           // 连接WiFi名（此处使用taichi-maker为示例）
+const char *ssid = "72B319"; // 连接WiFi名（此处使用taichi-maker为示例）
 // 请将您需要连接的WiFi名填入引号中
 const char *password = "xiao760914aa"; // 连接WiFi密码（此处使用12345678为示例）
 
 Adafruit_SSD1306 oled(128, 64, &Wire, -1);
 
-void setup() {
+void setup()
+{
     oled.begin(SSD1306_SWITCHCAPVCC, 0x3C);
     oled.setTextColor(WHITE); //开像素点发光
     oled.clearDisplay();      //清屏

@@ -71,16 +71,22 @@ void connectWiFi() {
     Serial.print("Connecting to "); // 串口监视器输出网络连接信息
     Serial.print(ssid);
     Serial.println(" ..."); // 告知用户NodeMCU正在尝试WiFi连接
-
+    oled.setCursor(2, 20); //设置显示位置
     int i = 0; // 这一段程序语句用于检查WiFi是否连接成功
     while (WiFi.status() != WL_CONNECTED) {                // WiFi.status()函数的返回值是由NodeMCU的WiFi连接状态所决定的。
-        delay(1000); // 如果WiFi连接成功则返回值为WL_CONNECTED
+        delay(500); // 如果WiFi连接成功则返回值为WL_CONNECTED
         digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+        oled.print("."); //设置显示位置
+        oled.display();  // 开显示
         Serial.print(i++);
         Serial.print(' ');                     // 此处通过While循环让NodeMCU每隔一秒钟检查一次WiFi.status()函数返回值
     }                                          // 同时NodeMCU将通过串口监视器输出连接时长读秒。
     digitalWrite(LED_BUILTIN, LOW);
-
+//    oled.setTextSize(1);   //设置字体大小
+//    oled.setCursor(2, 35); //设置显示位置
+//    oled.println("Connected,IP address:");
+//    oled.println();
+//    oled.println(WiFi.localIP());
     // 这个读秒是通过变量i每隔一秒自加1来实现的。
     Serial.println("");                        // WiFi连接成功后
     Serial.println("Connection established!"); // NodeMCU将通过串口监视器输出"连接成功"信息。
@@ -91,97 +97,39 @@ void connectWiFi() {
 // 利用ArduinoJson库解析心知天气响应信息
 void parseInfo(WiFiClient client) {
     const size_t capacity =
-            JSON_ARRAY_SIZE(1) + JSON_ARRAY_SIZE(3) + JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(3) + JSON_OBJECT_SIZE(6) +
-            3 * JSON_OBJECT_SIZE(14) + 860;
-
+            JSON_ARRAY_SIZE(1) + JSON_OBJECT_SIZE(1) + 2 * JSON_OBJECT_SIZE(3) + JSON_OBJECT_SIZE(6) + 230;
     DynamicJsonDocument doc(capacity);
 
     deserializeJson(doc, client);
 
     JsonObject results_0 = doc["results"][0];
 
-    JsonArray results_0_daily = results_0["daily"];
+    JsonObject results_0_now = results_0["now"];
+    const char *results_0_now_text = results_0_now["text"]; // "Sunny"
+    const char *results_0_now_code = results_0_now["code"]; // "0"
+    const char *results_0_now_temperature = results_0_now["temperature"]; // "32"
 
-    JsonObject results_0_daily_0 = results_0_daily[0];
-    const char *results_0_daily_0_date = results_0_daily_0["date"];
-    const char *results_0_daily_0_text_day = results_0_daily_0["text_day"];
-    const char *results_0_daily_0_code_day = results_0_daily_0["code_day"];
-    const char *results_0_daily_0_text_night = results_0_daily_0["text_night"];
-    const char *results_0_daily_0_code_night = results_0_daily_0["code_night"];
-    const char *results_0_daily_0_high = results_0_daily_0["high"];
-    const char *results_0_daily_0_low = results_0_daily_0["low"];
-    const char *results_0_daily_0_rainfall = results_0_daily_0["rainfall"];
-    const char *results_0_daily_0_precip = results_0_daily_0["precip"];
-    const char *results_0_daily_0_wind_direction = results_0_daily_0["wind_direction"];
-    const char *results_0_daily_0_wind_direction_degree = results_0_daily_0["wind_direction_degree"];
-    const char *results_0_daily_0_wind_speed = results_0_daily_0["wind_speed"];
-    const char *results_0_daily_0_wind_scale = results_0_daily_0["wind_scale"];
-    const char *results_0_daily_0_humidity = results_0_daily_0["humidity"];
+    const char *results_0_last_update = results_0["last_update"]; // "2020-06-02T14:40:00+08:00"
 
-    JsonObject results_0_daily_1 = results_0_daily[1];
-    const char *results_0_daily_1_date = results_0_daily_1["date"];
-    const char *results_0_daily_1_text_day = results_0_daily_1["text_day"];
-    const char *results_0_daily_1_code_day = results_0_daily_1["code_day"];
-    const char *results_0_daily_1_text_night = results_0_daily_1["text_night"];
-    const char *results_0_daily_1_code_night = results_0_daily_1["code_night"];
-    const char *results_0_daily_1_high = results_0_daily_1["high"];
-    const char *results_0_daily_1_low = results_0_daily_1["low"];
-    const char *results_0_daily_1_rainfall = results_0_daily_1["rainfall"];
-    const char *results_0_daily_1_precip = results_0_daily_1["precip"];
-    const char *results_0_daily_1_wind_direction = results_0_daily_1["wind_direction"];
-    const char *results_0_daily_1_wind_direction_degree = results_0_daily_1["wind_direction_degree"];
-    const char *results_0_daily_1_wind_speed = results_0_daily_1["wind_speed"];
-    const char *results_0_daily_1_wind_scale = results_0_daily_1["wind_scale"];
-    const char *results_0_daily_1_humidity = results_0_daily_1["humidity"];
+    // 通过串口监视器显示以上信息
+    String results_0_now_text_str = results_0_now["text"].as<String>();
+    int results_0_now_code_int = results_0_now["code"].as<int>();
+    int results_0_now_temperature_int = results_0_now["temperature"].as<int>();
 
-    JsonObject results_0_daily_2 = results_0_daily[2];
-    const char *results_0_daily_2_date = results_0_daily_2["date"];
-    const char *results_0_daily_2_text_day = results_0_daily_2["text_day"];
-    const char *results_0_daily_2_code_day = results_0_daily_2["code_day"];
-    const char *results_0_daily_2_text_night = results_0_daily_2["text_night"];
-    const char *results_0_daily_2_code_night = results_0_daily_2["code_night"];
-    const char *results_0_daily_2_high = results_0_daily_2["high"];
-    const char *results_0_daily_2_low = results_0_daily_2["low"];
-    const char *results_0_daily_2_rainfall = results_0_daily_2["rainfall"];
-    const char *results_0_daily_2_precip = results_0_daily_2["precip"];
-    const char *results_0_daily_2_wind_direction = results_0_daily_2["wind_direction"];
-    const char *results_0_daily_2_wind_direction_degree = results_0_daily_2["wind_direction_degree"];
-    const char *results_0_daily_2_wind_speed = results_0_daily_2["wind_speed"];
-    const char *results_0_daily_2_wind_scale = results_0_daily_2["wind_scale"];
-    const char *results_0_daily_2_humidity = results_0_daily_2["humidity"];
-
-    const char *results_0_last_update = results_0["last_update"];
-
-    // 从以上信息中摘选几个通过串口监视器显示
-    String results_0_daily_0_date_str = results_0_daily_0["date"].as<String>();
-    String results_0_daily_0_text_day_str = results_0_daily_0["text_day"].as<String>();
-    int results_0_daily_0_code_day_int = results_0_daily_0["code_day"].as<int>();
-    String results_0_daily_0_text_night_str = results_0_daily_0["text_night"].as<String>();
-    int results_0_daily_0_code_night_int = results_0_daily_0["code_night"].as<int>();
-    int results_0_daily_0_high_int = results_0_daily_0["high"].as<int>();
-    int results_0_daily_0_low_int = results_0_daily_0["low"].as<int>();
     String results_0_last_update_str = results_0["last_update"].as<String>();
-//    获取天气预报信息（温度，天气，降水概率，风力，风向，湿度）
-    Serial.println(F("======Today Weahter ======="));
-    Serial.print(F("DATE: "));
-    Serial.println(results_0_daily_0_date_str);
-    Serial.print(F("Day Weather: "));
-    Serial.print(results_0_daily_0_text_day_str);
+
+    Serial.println(F("======Weahter Now======="));
+    Serial.print(F("Weather Now: "));
+    Serial.print(results_0_now_text_str);
     Serial.print(F(" "));
-    Serial.println();
-    Serial.print(F("Night Weather: "));
-    Serial.print(results_0_daily_0_text_night_str);
-    Serial.print(F(" "));
-    Serial.println(results_0_daily_0_code_night_int);
-    Serial.print(F("High: "));
-    Serial.println(results_0_daily_0_high_int);
-    Serial.print(F("LOW: "));
-    Serial.println(results_0_daily_0_low_int);
+    Serial.println(results_0_now_code_int);
+    Serial.print(F("Temperature: "));
+    Serial.println(results_0_now_temperature_int);
     Serial.print(F("Last Update: "));
     Serial.println(results_0_last_update_str);
     Serial.println(F("========================"));
     oled.clearDisplay();      //清屏
-    oled.setTextSize(1);   //设置字体大小
+    oled.setTextSize(2);   //设置字体大小
     oled.setCursor(15, 5); //设置显示位置
     oled.print(F("temp: "));
     oled.println(results_0_now_temperature_int);  //温度
