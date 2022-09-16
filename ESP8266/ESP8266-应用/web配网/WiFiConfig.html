@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=GBK" />-->
+	<meta charset="GBK">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>?????up??ESP8266???????</title>
+
+</head>
+
+<body>
+	<form name="my">
+		WiFi?????
+		<input type="text" name="s" placeholder="????????WiFi??????" id="aa">
+		<br>
+		WiFi????
+		<input type="text" name="p" placeholder="????????WiFi??????" id="bb">
+		<br>
+		<input type="button" value="????" onclick="wifi()">
+	</form>
+	<script language="javascript">
+
+		function wifi() {
+			var ssid = my.s.value;
+			var password = bb.value;
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.open("GET", "/HandleVal?ssid=" + ssid + "&password=" + password, true);
+			xmlhttp.send()
+			alert("????????" + ssid + ' ' + "???????" + password);
+		}
+	</script>
+</body>
+
+</html>

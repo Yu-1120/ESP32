@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LED-DEMO"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Production">
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 Production"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Debug">
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 Debug"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORMIO=60104"/>
+					<Add option="-DARDUINO_AirM2M_CORE_ESP32C3"/>
+					<Add option="-DARDUINO_USB_MODE=1"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-DUNITY_INCLUDE_CONFIG_H"/>
+					<Add option="-DWITH_POSIX"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v4.4.1-472-gc9140caf8c&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add option="-DARDUINO_ARCH_ESP32"/>
+					<Add option="-DESP32"/>
+					<Add option="-DF_CPU=160000000L"/>
+					<Add option="-DARDUINO=10812"/>
+					<Add option="-DARDUINO_VARIANT=&quot;AirM2M_CORE_ESP32C3&quot;"/>
+					<Add option="-DARDUINO_BOARD=&quot;AirM2M CORE ESP32C3&quot;"/>
+					<Add option="-DARDUINO_PARTITION_default"/>
+					<Add directory="E:/GitHub/ESP32/ESP32C3/LED-DEMO/include"/>
+					<Add directory="E:/GitHub/ESP32/ESP32C3/LED-DEMO/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/newlib/platform_include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include/esp_additions/freertos"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/port/riscv/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include/esp_additions"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/include/soc"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/include/soc/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/port/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/port/esp32c3/private_include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/heap/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/log/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/include/apps"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/include/apps/sntp"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/lwip/src/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/port/esp32/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/port/esp32/include/arch"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/soc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/soc/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/soc/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/hal/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/hal/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/hal/platform_port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rom/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rom/include/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rom/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/port/soc"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/port/include/riscv"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/port/public_compat"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/riscv/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/driver/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/driver/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_pm/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_ringbuf/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/efuse/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/efuse/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/vfs/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_wifi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_event/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_netif/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_eth/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/tcpip_adapter/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_phy/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_phy/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_ipc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/app_trace/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_timer/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mbedtls/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mbedtls/mbedtls/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mbedtls/esp_crt_bundle/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/app_update/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/spi_flash/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bootloader_support/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/nvs_flash/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/pthread/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_gdbstub/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_gdbstub/riscv"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_gdbstub/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/espcoredump/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/espcoredump/include/port/riscv"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wpa_supplicant/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wpa_supplicant/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wpa_supplicant/esp_supplicant/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/ieee802154/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/console"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/asio/asio/asio/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/asio/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/osi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/include/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/api/include/api"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/btc/profile/esp/blufi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/btc/profile/esp/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/host/bluedroid/api/include/api"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_common/tinycrypt/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_core"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_core/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_core/storage"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/btc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_models/common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_models/client/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_models/server/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/api/core/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/api/models/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/api"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/cbor/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/unity/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/unity/unity/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/cmock/CMock/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/coap/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/coap/libcoap/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/nghttp/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/nghttp/nghttp2/lib/includes"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-tls"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-tls/esp-tls-crypto"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_adc_cal/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hid/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/tcp_transport/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_http_client/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_http_server/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_https_ota/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_https_server/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_lcd/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_lcd/interface"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protobuf-c/protobuf-c"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protocomm/include/common"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protocomm/include/security"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protocomm/include/transports"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mdns/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_local_ctrl/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/sdmmc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_serial_slave_link/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_websocket_client/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/expat/expat/expat/lib"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/expat/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wear_levelling/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fatfs/diskio"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fatfs/vfs"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fatfs/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freemodbus/common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/idf_test/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/idf_test/include/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/jsmn/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json/cJSON"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/libsodium/libsodium/src/libsodium/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/libsodium/port_include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mqtt/esp-mqtt/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/openssl/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/spiffs/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wifi_provisioning/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/button/button/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/rmaker_common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json_parser/upstream/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json_parser/upstream"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json_generator/upstream"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_schedule/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rainmaker/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/qrcode/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/ws2812_led"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/dotprod/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/support/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/hann/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/blackman/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/blackman_harris/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/blackman_nuttall/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/nuttall/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/flat_top/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/iir/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/fir/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/add/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/sub/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/mul/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/addc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/mulc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/sqrt/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/matrix/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/fft/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/dct/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/conv/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/kalman/ekf/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/kalman/ekf_imu13states/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_littlefs/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_littlefs/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/tool"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/typedef"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/image"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/math"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/nn"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/layer"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/detect"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/model_zoo"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp32-camera/driver/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp32-camera/conversions/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fb_gfx/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/dio_qspi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/cores/esp32"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/variants/AirM2M_CORE_ESP32C3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/BluetoothSerial/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/DNSServer/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/EEPROM/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/ESP32/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/ESPmDNS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/LittleFS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/NetBIOS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Preferences/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/RainMaker/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SD/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SPIFFS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SimpleBLE/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/riscv32-esp-elf/include/c++/8.4.0"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/riscv32-esp-elf/include/c++/8.4.0/riscv32-esp-elf"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/lib/gcc/riscv32-esp-elf/8.4.0/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/lib/gcc/riscv32-esp-elf/8.4.0/include-fixed"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/riscv32-esp-elf/include"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORMIO=60104"/>
+					<Add option="-DARDUINO_AirM2M_CORE_ESP32C3"/>
+					<Add option="-DARDUINO_USB_MODE=1"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-DUNITY_INCLUDE_CONFIG_H"/>
+					<Add option="-DWITH_POSIX"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v4.4.1-472-gc9140caf8c&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add option="-DARDUINO_ARCH_ESP32"/>
+					<Add option="-DESP32"/>
+					<Add option="-DF_CPU=160000000L"/>
+					<Add option="-DARDUINO=10812"/>
+					<Add option="-DARDUINO_VARIANT=&quot;AirM2M_CORE_ESP32C3&quot;"/>
+					<Add option="-DARDUINO_BOARD=&quot;AirM2M CORE ESP32C3&quot;"/>
+					<Add option="-DARDUINO_PARTITION_default"/>
+					<Add directory="E:/GitHub/ESP32/ESP32C3/LED-DEMO/include"/>
+					<Add directory="E:/GitHub/ESP32/ESP32C3/LED-DEMO/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/newlib/platform_include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include/esp_additions/freertos"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/port/riscv/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include/esp_additions"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/include/soc"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/include/soc/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/port/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hw_support/port/esp32c3/private_include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/heap/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/log/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/include/apps"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/include/apps/sntp"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/lwip/src/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/port/esp32/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/lwip/port/esp32/include/arch"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/soc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/soc/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/soc/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/hal/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/hal/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/hal/platform_port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rom/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rom/include/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rom/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/port/soc"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/port/include/riscv"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_system/port/public_compat"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/riscv/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/driver/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/driver/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_pm/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_ringbuf/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/efuse/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/efuse/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/vfs/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_wifi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_event/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_netif/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_eth/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/tcpip_adapter/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_phy/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_phy/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_ipc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/app_trace/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_timer/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mbedtls/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mbedtls/mbedtls/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mbedtls/esp_crt_bundle/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/app_update/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/spi_flash/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bootloader_support/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/nvs_flash/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/pthread/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_gdbstub/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_gdbstub/riscv"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_gdbstub/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/espcoredump/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/espcoredump/include/port/riscv"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wpa_supplicant/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wpa_supplicant/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wpa_supplicant/esp_supplicant/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/ieee802154/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/console"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/asio/asio/asio/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/asio/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/osi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/include/esp32c3/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/api/include/api"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/btc/profile/esp/blufi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/common/btc/profile/esp/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/host/bluedroid/api/include/api"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_common/tinycrypt/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_core"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_core/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_core/storage"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/btc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_models/common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_models/client/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/mesh_models/server/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/api/core/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/api/models/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/bt/esp_ble_mesh/api"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/cbor/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/unity/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/unity/unity/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/cmock/CMock/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/coap/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/coap/libcoap/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/nghttp/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/nghttp/nghttp2/lib/includes"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-tls"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-tls/esp-tls-crypto"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_adc_cal/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_hid/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/tcp_transport/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_http_client/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_http_server/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_https_ota/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_https_server/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_lcd/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_lcd/interface"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protobuf-c/protobuf-c"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protocomm/include/common"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protocomm/include/security"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/protocomm/include/transports"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mdns/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_local_ctrl/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/sdmmc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_serial_slave_link/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_websocket_client/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/expat/expat/expat/lib"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/expat/port/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wear_levelling/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fatfs/diskio"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fatfs/vfs"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fatfs/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freemodbus/common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/idf_test/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/idf_test/include/esp32c3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/jsmn/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json/cJSON"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/libsodium/libsodium/src/libsodium/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/libsodium/port_include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/mqtt/esp-mqtt/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/openssl/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/spiffs/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/wifi_provisioning/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/button/button/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/rmaker_common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json_parser/upstream/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json_parser/upstream"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/json_generator/upstream"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_schedule/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_rainmaker/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/qrcode/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/ws2812_led"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/dotprod/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/support/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/hann/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/blackman/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/blackman_harris/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/blackman_nuttall/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/nuttall/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/windows/flat_top/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/iir/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/fir/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/add/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/sub/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/mul/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/addc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/mulc/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/math/sqrt/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/matrix/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/fft/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/dct/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/conv/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/common/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/kalman/ekf/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dsp/modules/kalman/ekf_imu13states/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_littlefs/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp_littlefs/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/tool"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/typedef"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/image"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/math"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/nn"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/layer"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/detect"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp-dl/include/model_zoo"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp32-camera/driver/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/esp32-camera/conversions/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/fb_gfx/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/dio_qspi/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/cores/esp32"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/variants/AirM2M_CORE_ESP32C3"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/BluetoothSerial/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/DNSServer/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/EEPROM/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/ESP32/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/ESPmDNS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/LittleFS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/NetBIOS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Preferences/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/RainMaker/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SD/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SPIFFS/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/SimpleBLE/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/riscv32-esp-elf/include/c++/8.4.0"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/riscv32-esp-elf/include/c++/8.4.0/riscv32-esp-elf"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/lib/gcc/riscv32-esp-elf/8.4.0/include"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/lib/gcc/riscv32-esp-elf/8.4.0/include-fixed"/>
+					<Add directory="C:/Users/11868/.platformio/packages/toolchain-riscv32-esp/riscv32-esp-elf/include"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/GitHub/ESP32/ESP32C3/LED-DEMO/src/main.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="E:/GitHub/ESP32/ESP32C3/LED-DEMO/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/GitHub/ESP32/ESP32C3/LED-DEMO/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

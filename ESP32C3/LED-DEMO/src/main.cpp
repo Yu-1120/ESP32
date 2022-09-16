@@ -11,23 +11,20 @@
 #define LED_D4 12
 #define LED_D5 13
 
-void setup()
-{
+void setup() {
 
-  Serial.begin(115200);
-  pinMode(LED_D4, OUTPUT);
-  pinMode(LED_D5, OUTPUT);
+    Serial.begin(115200);
+    pinMode(LED_D4, OUTPUT);
+    pinMode(LED_D5, OUTPUT);
 }
 
-void loop()
-{
+void loop() {
 
-  Serial.println("Hello world!");
+    Serial.println("Hello world!");
 
-  digitalWrite(LED_D4, LOW);
-  digitalWrite(LED_D5, HIGH); //点亮
-  delay(500);
-  digitalWrite(LED_D4, HIGH);
-  digitalWrite(LED_D5, LOW);
-  delay(500);
+    digitalWrite(LED_D5, !digitalRead(LED_D5)); //点亮
+    delay(100);
+    digitalWrite(LED_D4, !digitalRead(LED_D4));
+
+
 }

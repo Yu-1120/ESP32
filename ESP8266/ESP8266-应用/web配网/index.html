@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <!-- 引入样式 -->
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            /* 去除浏览器的默认样式 */
+            /* 外边距 */
+
+            margin: 0;
+            /* 内边距 */
+            padding: 0;
+            /* 字体 */
+            font-family: sans-serif;
+            /* 背景颜色 */
+            background: linear-gradient(#141e30, #243b55);
+        }
+
+        .login-box {
+            /* 登录框剧中  绝对定位,下面4个属性实现居中*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 400px;
+            /* 内边距 */
+            padding: 40px;
+            /* 背景颜色 */
+            background: rgba(0, 0, 0, .6);
+            /* 标准盒模型 */
+            box-sizing: border-box;
+            /* 设置盒子阴影 */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+            /* 边框圆角 */
+            border-radius: 10px;
+        }
+
+        /* 登录框标题 */
+        .login-box h2 {
+            /* 外边距 上0 右0 左右30px  */
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            /* 文字居中 */
+            text-align: center;
+        }
+
+        .login-box .user-box {
+            /* 账号输入框相对定位 */
+            position: relative;
+        }
+
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            /* 去掉所有边框 */
+            border: none;
+            /* 保留下边框 */
+            border-bottom: 1px solid #fff;
+            outline: none;
+            /* 背景颜色透明 */
+            background: transparent;
+
+        }
+
+        .login-box .user-box label {
+            /* 绝对定位 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* 内边距 */
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            /* 过度效果 */
+            transition: .5s;
+        }
+
+        /* 输入框鼠标聚焦\移开时 */
+        /* 兄弟选择器 */
+        .login-box .user-box input:focus~label,
+        .login-box .user-box input:valid~label {
+            /* 这里的效果时当鼠标放在输入框时,username和password会有一个位置的挪动 */
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+
+        .login-box form a {
+            /* 相对定位 */
+            position: relative;
+            /* 行内块元素 */
+            display: inline-block;
+            /* 内边距 */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #03e9f4;
+            /* 去掉a 的下划线 */
+            text-decoration: none;
+            /* 文字间距增大 */
+            letter-spacing: 4px;
+            overflow: hidden;
+            /* 过渡效果 */
+            transition: .5s;
+            margin-top: 40px;
+            /* 全部转大写 */
+            text-transform: uppercase;
+        }
+
+        /* 鼠标移上去会有一个发光的效果 */
+        .login-box a:hover {
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            /* 盒子阴影 */
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+        }
+
+        /* 开始画动画 */
+
+        .login-box a span {
+            /* 绝对定位 */
+            position: absolute;
+            /* 块元素 */
+            display: block;
+        }
+
+        /* 第一根线,上侧,从左至右 */
+        .login-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            /* 背景颜色 */
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            /* 动画   持续1S  匀速,无限次运行 */
+            animation: an-1 1s linear infinite;
+        }
+
+        /* 第一根线,上侧,从左至右 */
+        @keyframes an-1 {
+            0% {
+                left: -100%;
+            }
+
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+
+
+        /* 第三根线,下侧,从右至左 */
+        .login-box a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            /* 背景颜色 */
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            /* 动画   持续1S  匀速,无限次运行 */
+            animation: an-3 1s linear infinite;
+            animation-delay: .5s;
+
+        }
+
+        /* 第三根线,下侧,从右至左 */
+        @keyframes an-3 {
+            0% {
+                right: -100%;
+            }
+
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+
+        /* 第二根先,右侧,从上至下 */
+
+
+        .login-box a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            /* 动画 */
+            animation: an-2 1s linear infinite;
+            /* 延迟 */
+            animation-delay: .25s;
+        }
+
+        /* 第二根先,右侧,从上至下 */
+        @keyframes an-2 {
+            0% {
+                top: -100%;
+            }
+
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+
+
+        /* 第四根线,左侧,从下至上 */
+
+        .login-box a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            /* 动画 */
+            animation: an-4 1s linear infinite;
+            /* 延迟 */
+            animation-delay: .75s;
+        }
+
+        /* 第四根线,左侧,从下至上 */
+        @keyframes an-4 {
+            0% {
+                bottom: -100%;
+            }
+
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form name="my">
+            <!-- 账号输入框 -->
+            <div class="user-box">
+                <input type="text" name="s" required="" id="aa">
+                <label for="">WiFi名称：</label>
+            </div>
+            <!-- 密码输入框 -->
+            <div class="user-box">
+                <input type="password" name="p" required="" id="bb">
+                <label for="">WiFi密码：</label>
+            </div>
+            <!-- 提交按钮 -->
+            <a href="">
+                <!-- <span></span>
+                <span></span>
+                <span></span>
+                <span></span> -->
+                <input type="button" value="连接" style=" border:0 none;  background: transparent;  ;opacity: 1; color:#fff;font-size: 15px;
+                " onclick="wifi()">
+            </a>
+        </form>
+    </div>
+    <script language="javascript">
+
+        function wifi() {
+            var ssid = my.s.value;
+            var password = bb.value;
+            if (ssid == 0 || password == 0) {
+                alert("账号或者密码为空,请重新输入账号和密码");
+                alert("The account or password is blank, please re-enter the account and password");
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", "/HandleVal?ssid=" + ssid + "&password=" + password, true);
+                xmlhttp.send()
+                alert("用户名为：" + ssid + ' ' + "密码为：" + password);
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
