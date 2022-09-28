@@ -1,4 +1,4 @@
-"D:\CLion\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=esp12e -G "CodeBlocks - MinGW Makefiles" -S E:\GitHub\ESP32\ESP8266\OLED -B E:\GitHub\ESP32\ESP8266\OLED\cmake-build-esp12e
+D:\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=esp12e -G "CodeBlocks - MinGW Makefiles" -S E:\GitHub\ESP32\ESP8266\OLED -B E:\GitHub\ESP32\ESP8266\OLED\cmake-build-esp12e
 -- Configuring done
 -- Generating done
 -- Build files have been written to: E:/GitHub/ESP32/ESP8266/OLED/cmake-build-esp12e

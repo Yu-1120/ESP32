@@ -1,0 +1,5 @@
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/CMakeFiles/Production.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/CMakeFiles/Debug.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/CMakeFiles/Z_DUMMY_TARGET.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/CMakeFiles/edit_cache.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-airm2m_core_esp32c3/CMakeFiles/rebuild_cache.dir

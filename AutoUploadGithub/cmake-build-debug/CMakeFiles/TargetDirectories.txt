@@ -1,4 +1,0 @@
-E:/GitHub/AutoUploadGithub/AutoUploadGithub/cmake-build-debug/CMakeFiles/AutoUploadGithub.dir
-E:/GitHub/AutoUploadGithub/AutoUploadGithub/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/GitHub/AutoUploadGithub/AutoUploadGithub/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/GitHub/AutoUploadGithub/AutoUploadGithub/cmake-build-debug/CMakeFiles/AutoUploadGithub_autogen.dir

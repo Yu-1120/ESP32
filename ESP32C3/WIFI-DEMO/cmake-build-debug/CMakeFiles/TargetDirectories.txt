@@ -1,0 +1,5 @@
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-debug/CMakeFiles/Production.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-debug/CMakeFiles/Debug.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-debug/CMakeFiles/Z_DUMMY_TARGET.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/GitHub/ESP32/ESP32C3/LED-DEMO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
