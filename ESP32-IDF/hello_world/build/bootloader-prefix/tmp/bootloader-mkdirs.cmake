@@ -17,6 +17,3 @@ set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
     file(MAKE_DIRECTORY "E:/GitHub/ESP32/ESP32-IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
-if(cfgdir)
-  file(MAKE_DIRECTORY "E:/GitHub/ESP32/ESP32-IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
-endif()

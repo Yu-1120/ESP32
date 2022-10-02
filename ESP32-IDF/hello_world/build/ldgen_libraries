@@ -28,7 +28,7 @@ E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/log/liblog.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/heap/libheap.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/soc/libsoc.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/esp_hw_support/libesp_hw_support.a
-E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/xtensa/libxtensa.a
+E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/riscv/libriscv.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/esp_common/libesp_common.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/esp_timer/libesp_timer.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/freertos/libfreertos.a
@@ -65,8 +65,6 @@ E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/json/libjson.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/libsodium/liblibsodium.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/mqtt/libmqtt.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/openssl/libopenssl.a
-E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/perfmon/libperfmon.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/spiffs/libspiffs.a
-E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/ulp/libulp.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 E:/GitHub/ESP32/ESP32-IDF/hello_world/build/esp-idf/main/libmain.a
