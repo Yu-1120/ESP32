@@ -1,0 +1,10 @@
+{
+    "idf.portWin": "COM8",
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "cmath": "cpp"
+    }
+}

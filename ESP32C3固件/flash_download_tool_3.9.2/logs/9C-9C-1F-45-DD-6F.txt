@@ -1,109 +1,0 @@
-*************************** START ****************************
-START TIME: 202209272228
-CONNECT BAUD: 115200
-set state: ESP_DL_SYNC
-serial port opened
------------
-baud:115200
-root baud:115200
--------------
-===============BAUD : 115200===============CALL DEVICE SYNC
-connecting...
-chip sync ok
-0x3ff00050: 6f670000
-0x3ff00054: 020045dd
-0x3ff00058: 2900b000
-0x3ff0005c: 009c9c1f
-check_err_0: 0bcheck_err_1: 00check_err_2: 00check_err_3: 02check_err_4: 0b====================
-EFUSE NORMAL MODE
-====================
-=========================
-CRC IN MODE 1: 
-crc_calc_res: 41
-target crc val: 41
-=========================
-=========================
-CRC IN MODE 1:
-crc_calc_res: 103
-target crc val: 103
-=========================
-==================
-EFUSE LOG:
-======================
-    EFUSE LOG:
-    ---------------
-    REG0:6F670000
-    REG1:020045DD
-    REG2:2900b000
-    REG3:009C9C1F
-    ----------------
-    ====================
-                                   EFUSE NORMAL MODE
-                                   ====================
-EFUSE CHECK PASS...48bit mac
------------------------
- 9c 9c 1f 45 dd 6fCUSTOM_ID: 02 90 00 00 00 06 70 00 
-MAC AP : 9E-9C-1F-45-DD-6F
-MAC STA: 9C-9C-1F-45-DD-6F
-get mac res: 1
-com closed
-Use time: 4 s
-Download result: FAIL
-*************************** END ****************************
-
-*************************** START ****************************
-START TIME: 202209282351
-CONNECT BAUD: 115200
-set state: ESP_DL_SYNC
-serial port opened
------------
-baud:115200
-root baud:115200
--------------
-===============BAUD : 115200===============CALL DEVICE SYNC
-connecting...
-chip sync ok
-0x3ff00050: 6f670000
-0x3ff00054: 020045dd
-0x3ff00058: 2900b000
-0x3ff0005c: 009c9c1f
-check_err_0: 0bcheck_err_1: 00check_err_2: 00check_err_3: 02check_err_4: 0b====================
-EFUSE NORMAL MODE
-====================
-=========================
-CRC IN MODE 1: 
-crc_calc_res: 41
-target crc val: 41
-=========================
-=========================
-CRC IN MODE 1:
-crc_calc_res: 103
-target crc val: 103
-=========================
-==================
-EFUSE LOG:
-======================
-    EFUSE LOG:
-    ---------------
-    REG0:6F670000
-    REG1:020045DD
-    REG2:2900b000
-    REG3:009C9C1F
-    ----------------
-    ====================
-                                   EFUSE NORMAL MODE
-                                   ====================
-EFUSE CHECK PASS...48bit mac
------------------------
- 9c 9c 1f 45 dd 6fCUSTOM_ID: 02 90 00 00 00 06 70 00 
-MAC AP : 9E-9C-1F-45-DD-6F
-MAC STA: 9C-9C-1F-45-DD-6F
-get mac res: 1
-get flash id : 0x0016405e
-manufacturer_id: 0x5e
-device_id: 0x4016
-com closed
-Use time: 13 s
-Download result: PASS
-*************************** END ****************************
-
